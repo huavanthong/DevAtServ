@@ -99,10 +99,10 @@ jobs:
         uses: remorses/bump-version@js
         with:
             version_file: ./version/version.txt
-            prefix: dir2 # this will prefix the created tag
+            prefix: dev/das/ # this will prefix the created tag
         env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-            
+
       - name: Upload Docker Images Zip
         uses: actions/upload-artifact@v4
         with:
